@@ -63,3 +63,46 @@ table.product-first-row {
 .category-card:hover span {
   color: #009900;
 }
+
+
+#player-wrapper {
+  position: relative;
+  width: 1024px;
+  height: 600px;
+}
+/* Your personalized loading overlay structure */
+#loader {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: #e3d8bc; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: sans-serif;
+  z-index: 10;
+  transition: opacity 0.5s ease; /* Fade-out transition */
+}
+#loader p {
+  color: #4c7934;
+}
+.spinner {
+  border: 4px solid #4c7934;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border-left-color: #87a56f;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
